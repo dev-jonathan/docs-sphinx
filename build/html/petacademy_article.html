@@ -1,0 +1,423 @@
+<!doctype html>
+<html class="no-js" lang="pt-BR" data-content_root="./">
+  <head><meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="index" title="Índice" href="genindex.html" /><link rel="search" title="Buscar" href="search.html" />
+
+    <!-- Generated with Sphinx 7.3.7 and Furo 2024.05.06 -->
+        <title>PETACADEMY: PLATAFORMA DE CURSOS - Documentação docs-petacademy</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?v=387cc868" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css?v=36a5483c" />
+    
+    
+
+
+<style>
+  body {
+    --color-code-background: #f8f8f8;
+  --color-code-foreground: black;
+  
+  }
+  @media not print {
+    body[data-theme="dark"] {
+      --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+    }
+    @media (prefers-color-scheme: dark) {
+      body:not([data-theme="light"]) {
+        --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+      }
+    }
+  }
+</style></head>
+  <body>
+    
+    <script>
+      document.body.dataset.theme = localStorage.getItem("theme") || "auto";
+    </script>
+    
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024">
+      <path d="M408 442h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm-8 204c0 4.4 3.6 8 8 8h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56zm504-486H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 632H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM115.4 518.9L271.7 642c5.8 4.6 14.4.5 14.4-6.9V388.9c0-7.4-8.5-11.5-14.4-6.9L115.4 505.1a8.74 8.74 0 0 0 0 13.8z"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun" viewBox="0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon" viewBox="0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-half" viewBox="0 0 24 24">
+    <title>Auto light/dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-shadow">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+      <circle cx="12" cy="12" r="9" />
+      <path d="M13 12h5" />
+      <path d="M13 15h4" />
+      <path d="M13 18h1" />
+      <path d="M13 9h4" />
+      <path d="M13 6h1" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-with-moon" viewBox="0 0 24 24">
+    <title>Auto light/dark, in light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+      class="icon-custom-derived-from-feather-sun-and-tabler-moon">
+      <path style="opacity: 50%" d="M 5.411 14.504 C 5.471 14.504 5.532 14.504 5.591 14.504 C 3.639 16.319 4.383 19.569 6.931 20.352 C 7.693 20.586 8.512 20.551 9.25 20.252 C 8.023 23.207 4.056 23.725 2.11 21.184 C 0.166 18.642 1.702 14.949 4.874 14.536 C 5.051 14.512 5.231 14.5 5.411 14.5 L 5.411 14.504 Z"/>
+      <line x1="14.5" y1="3.25" x2="14.5" y2="1.25"/>
+      <line x1="14.5" y1="15.85" x2="14.5" y2="17.85"/>
+      <line x1="10.044" y1="5.094" x2="8.63" y2="3.68"/>
+      <line x1="19" y1="14.05" x2="20.414" y2="15.464"/>
+      <line x1="8.2" y1="9.55" x2="6.2" y2="9.55"/>
+      <line x1="20.8" y1="9.55" x2="22.8" y2="9.55"/>
+      <line x1="10.044" y1="14.006" x2="8.63" y2="15.42"/>
+      <line x1="19" y1="5.05" x2="20.414" y2="3.636"/>
+      <circle cx="14.5" cy="9.55" r="3.6"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon-with-sun" viewBox="0 0 24 24">
+    <title>Auto light/dark, in dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+      class="icon-custom-derived-from-feather-sun-and-tabler-moon">
+      <path d="M 8.282 7.007 C 8.385 7.007 8.494 7.007 8.595 7.007 C 5.18 10.184 6.481 15.869 10.942 17.24 C 12.275 17.648 13.706 17.589 15 17.066 C 12.851 22.236 5.91 23.143 2.505 18.696 C -0.897 14.249 1.791 7.786 7.342 7.063 C 7.652 7.021 7.965 7 8.282 7 L 8.282 7.007 Z"/>
+      <line style="opacity: 50%" x1="18" y1="3.705" x2="18" y2="2.5"/>
+      <line style="opacity: 50%" x1="18" y1="11.295" x2="18" y2="12.5"/>
+      <line style="opacity: 50%" x1="15.316" y1="4.816" x2="14.464" y2="3.964"/>
+      <line style="opacity: 50%" x1="20.711" y1="10.212" x2="21.563" y2="11.063"/>
+      <line style="opacity: 50%" x1="14.205" y1="7.5" x2="13.001" y2="7.5"/>
+      <line style="opacity: 50%" x1="21.795" y1="7.5" x2="23" y2="7.5"/>
+      <line style="opacity: 50%" x1="15.316" y1="10.184" x2="14.464" y2="11.036"/>
+      <line style="opacity: 50%" x1="20.711" y1="4.789" x2="21.563" y2="3.937"/>
+      <circle style="opacity: 50%" cx="18" cy="7.5" r="2.169"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-pencil" viewBox="0 0 24 24">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-pencil-code">
+      <path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4" />
+      <path d="M13.5 6.5l4 4" />
+      <path d="M20 21l2 -2l-2 -2" />
+      <path d="M17 17l-2 2l2 2" /
+    </svg>
+  </symbol>
+  <symbol id="svg-eye" viewBox="0 0 24 24">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-eye-code">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+      <path
+        d="M11.11 17.958c-3.209 -.307 -5.91 -2.293 -8.11 -5.958c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6c-.21 .352 -.427 .688 -.647 1.008" />
+      <path d="M20 21l2 -2l-2 -2" />
+      <path d="M17 17l-2 2l2 2" />
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc">
+<label class="overlay sidebar-overlay" for="__navigation">
+  <div class="visually-hidden">Hide navigation sidebar</div>
+</label>
+<label class="overlay toc-overlay" for="__toc">
+  <div class="visually-hidden">Hide table of contents sidebar</div>
+</label>
+
+<a class="skip-to-content muted-link" href="#furo-main-content">Skip to content</a>
+
+
+
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <div class="visually-hidden">Toggle site navigation sidebar</div>
+        <i class="icon"><svg><use href="#svg-menu"></use></svg></i>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="index.html"><div class="brand">Documentação docs-petacademy </div></a>
+    </div>
+    <div class="header-right">
+      <div class="theme-toggle-container theme-toggle-header">
+        <button class="theme-toggle">
+          <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+          <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
+          <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
+          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+        </button>
+      </div>
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+        <div class="visually-hidden">Toggle table of contents sidebar</div>
+        <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="index.html">
+  
+  
+  <span class="sidebar-brand-text">Documentação docs-petacademy </span>
+  
+</a><form class="sidebar-search-container" method="get" action="search.html" role="search">
+  <input class="sidebar-search" placeholder="Buscar" name="q" aria-label="Buscar">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
+  
+</div>
+</div>
+
+      </div>
+      
+    </div>
+  </aside>
+  <div class="main">
+    <div class="content">
+      <div class="article-container">
+        <a href="#" class="back-to-top muted-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+          </svg>
+          <span>Back to top</span>
+        </a>
+        <div class="content-icon-container">
+          <div class="view-this-page">
+  <a class="muted-link" href="_sources/petacademy_article.md.txt" title="View this page">
+    <svg><use href="#svg-eye"></use></svg>
+    <span class="visually-hidden">View this page</span>
+  </a>
+</div>
+<div class="theme-toggle-container theme-toggle-content">
+            <button class="theme-toggle">
+              <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+              <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
+              <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
+              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+            </button>
+          </div>
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
+            <div class="visually-hidden">Toggle table of contents sidebar</div>
+            <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+          </label>
+        </div>
+        <article role="main" id="furo-main-content">
+          <section id="petacademy-plataforma-de-cursos">
+<h1>PETACADEMY: PLATAFORMA DE CURSOS<a class="headerlink" href="#petacademy-plataforma-de-cursos" title="Link para este cabeçalho">¶</a></h1>
+<section id="resumo">
+<h2>Resumo<a class="headerlink" href="#resumo" title="Link para este cabeçalho">¶</a></h2>
+<p>O PETSIMC está desenvolvendo o PetAcademy, uma inovadora plataforma educacional da Universidade Federal de Uberlândia (UFU). Este projeto busca oferecer educação de alta qualidade, gratuita e acessível, inicialmente voltada à programação e tecnologia da informação, com planos de expansão para diversas áreas de conhecimento. Seu design responsivo garante adaptabilidade a diversos dispositivos, e sua natureza baseada na web elimina barreiras técnicas. As funcionalidades da plataforma incluem visualização de informações dos cursos, sistema de chat interativo, gestão de cursos e conteúdo, e avaliação com certificação autenticada. A infraestrutura tecnológica é fundamentada em ferramentas consolidadas, como Firebase e NodeJS, e a metodologia de conteúdo segue os padrões da universidade. A implementação do PetAcademy promete beneficiar amplamente a comunidade educacional, reforçando o compromisso meio acadêmico com a inovação e a difusão do conhecimento. Esta iniciativa exemplifica o poder da tecnologia em democratizar a educação e criar oportunidades de aprendizado acessíveis.</p>
+</section>
+<section id="introducao">
+<h2>1. Introdução<a class="headerlink" href="#introducao" title="Link para este cabeçalho">¶</a></h2>
+<p>O PetAcademy, em desenvolvimento pelo PETSIMC, surge como uma plataforma educacional promissora na Universidade Federal de Uberlândia (UFU). Este projeto em progresso visa ser um meio proeminente de aprendizado, não apenas para os estudantes de Sistemas de Informação, mas também para estudantes de diferentes áreas, tanto da comunidade interna quanto externa à UFU. Assim, promove uma disseminação multifacetada do conhecimento de forma gratuita e aberta, onde qualquer pessoa pode acessar as videoaulas, concluir exercícios, tirar dúvidas e obter certificação.</p>
+</section>
+<section id="objetivos">
+<h2>2. Objetivos<a class="headerlink" href="#objetivos" title="Link para este cabeçalho">¶</a></h2>
+<p>Este projeto em evolução tem como meta mitigar taxas de reprovação e desistência ao oferecer um ambiente de aprendizagem abrangente e enriquecedor. Diante de desafios educacionais, as metodologias de ensino inovadoras, especialmente aquelas que fazem uso de b-learning e ferramentas digitais, têm sido fundamentais para manter padrões de qualidade no ensino universitário (Ruiz et al., 2021). O principal objetivo da PetAcademy é diversificar e democratizar o aprendizado, tornando-o acessível tanto para a comunidade interna quanto para a externa da UFU, além de promover a interação entre diversos campos do saber. A missão principal da PetAcademy é oferecer educação de alta qualidade, gratuita e acessível, com foco inicial em programação e tecnologia da informação, mas com planos de expandir para outras disciplinas e áreas do conhecimento.</p>
+</section>
+<section id="estado-atual-e-desenvolvimento-continuado">
+<h2>3. Estado Atual e Desenvolvimento Continuado<a class="headerlink" href="#estado-atual-e-desenvolvimento-continuado" title="Link para este cabeçalho">¶</a></h2>
+<p>O estágio presente do PetAcademy é marcado por uma fase intensiva de desenvolvimento. A equipe está dedicando esforços significativos para finalizar as funcionalidades e otimizar a experiência do usuário, assegurando que a plataforma atenda às necessidades educacionais de maneira eficaz e intuitiva. Enquanto o desenvolvimento e a criação inicial de conteúdo são realizados pelo PETSIMC, já está disponível a funcionalidade que permite a outros grupos PET se cadastrarem e tornarem-se criadores de conteúdo para a plataforma. Esta adição amplia o alcance e a diversidade do material didático oferecido.</p>
+</section>
+<section id="adaptabilidade-e-acessibilidade-web">
+<h2>4. Adaptabilidade e Acessibilidade Web<a class="headerlink" href="#adaptabilidade-e-acessibilidade-web" title="Link para este cabeçalho">¶</a></h2>
+<p>A adaptabilidade do sistema às diversas dimensões de tela, independentemente do dispositivo, é um aspecto crítico na era digital. A plataforma PetAcademy foi desenvolvida para ser responsiva, o que implica que seu design foi otimizado para assegurar uma visualização adequada e uma interação eficaz em dispositivos variados, desde computadores desktop até smartphones. Esta característica é essencial, considerando a diversidade de dispositivos utilizados no contexto educacional contemporâneo. A natureza baseada na web da plataforma simplifica a acessibilidade ao conteúdo. Ao ser hospedada na web, a PetAcademy elimina a necessidade de softwares específicos, permitindo o acesso via qualquer navegador padrão. Este aspecto facilita o engajamento dos alunos, uma vez que elimina potenciais barreiras técnicas.</p>
+</section>
+<section id="funcionalidades-do-sistema">
+<h2>5. Funcionalidades do Sistema<a class="headerlink" href="#funcionalidades-do-sistema" title="Link para este cabeçalho">¶</a></h2>
+<p>Mesmo em desenvolvimento, a plataforma já apresenta uma estrutura intuitiva e de fácil navegação. Os usuários podem visualizar informações detalhadas sobre os cursos disponíveis, os professores responsáveis e os módulos que compõem cada curso, bem como suas videoaulas, materiais de apoio em texto e chat para tirar dúvidas.</p>
+<figure style="display: inline-block;">
+  <img src="/source/imgs/site-diferentes-telas.png" alt="Representação do site em diferentes dispositivos">
+  <figcaption style="text-align: center;">Figura 1 - Representação do site em diferentes dispositivos</figcaption>
+</figure>
+<section id="login-e-acesso">
+<h3>5.1 Login e Acesso<a class="headerlink" href="#login-e-acesso" title="Link para este cabeçalho">¶</a></h3>
+<p>Os usuários podem acessar facilmente a plataforma utilizando diferentes métodos de login, como e-mail, senha ou conta Google, garantindo assim um acesso descomplicado aos recursos educativos.</p>
+<figure style="display: inline-block;">
+  <img src="/source/imgs/login.png" alt="Figura 2 - Tela de login">
+  <figcaption style="text-align: center;">Figura 2 - Tela de login</figcaption>
+</figure>
+</section>
+<section id="interatividade-e-comunicacao">
+<h3>5.2 Interatividade e Comunicação<a class="headerlink" href="#interatividade-e-comunicacao" title="Link para este cabeçalho">¶</a></h3>
+<p>O ambiente de aprendizagem é potencializado por um sistema de chat interativo, permitindo discussões, esclarecimento de dúvidas e sugestões sobre os temas abordados, utilizando a renomada plataforma Disqus, que possui políticas eficientes contra spam e comentários ofensivos, além de várias funcionalidades de gerenciamento de comentários.</p>
+<figure style="display: inline-block;">
+  <img src="/source/imgs/chat.png" alt="Figura 3 - Chat das aulas">
+  <figcaption style="text-align: center;">Figura 3 - Chat das aulas</figcaption>
+</figure>
+</section>
+<section id="gestao-de-cursos-e-conteudo">
+<h3>5.3 Gestão de Cursos e Conteúdo<a class="headerlink" href="#gestao-de-cursos-e-conteudo" title="Link para este cabeçalho">¶</a></h3>
+<p>Membros do Programa de Educação Tutorial, incluindo grupos PET além do PETSIMC, têm privilégios adicionais na plataforma, podendo criar, alterar e excluir cursos. Esta funcionalidade não só permite uma constante atualização e diversificação dos conhecimentos oferecidos na plataforma, como também incentiva a colaboração interdisciplinar e a contribuição de diversos especialistas no domínio acadêmico.</p>
+</section>
+<section id="avaliacao-e-certificacao">
+<h3>5.4 Avaliação e Certificação<a class="headerlink" href="#avaliacao-e-certificacao" title="Link para este cabeçalho">¶</a></h3>
+<p>A avaliação rigorosa por meio de questionários e a exigência de uma média mínima de 60% de acertos para certificação asseguram a credibilidade dos cursos. A automação na emissão de certificados é realizada por meio da integração com a plataforma PetCert, desenvolvida pelo PETSIMC, validando ainda mais a autenticidade e legitimidade dos certificados emitidos.</p>
+<figure style="display: inline-block;">
+  <img src="/source/imgs/petcert.png" alt="Figura 4 - PetCert, componente que automatiza os certificados">
+  <figcaption style="text-align: center;">Figura 4 - PetCert, componente que automatiza os certificados</figcaption>
+</figure>
+</section>
+</section>
+<section id="tecnologias-empregadas">
+<h2>6. Tecnologias Empregadas<a class="headerlink" href="#tecnologias-empregadas" title="Link para este cabeçalho">¶</a></h2>
+<p>A infraestrutura tecnológica da PetAcademy é fundamentada em ferramentas e tecnologias consolidadas no mercado de desenvolvimento web:</p>
+<ul class="simple">
+<li><p>Firebase Hosting: Utilizado para a hospedagem da plataforma, garante estabilidade e velocidade no carregamento dos conteúdos.</p></li>
+<li><p>Firebase Authentication: Responsável pelo sistema de autenticação de usuários, é empregado para garantir a segurança e integridade das informações de acesso dos usuários.</p></li>
+<li><p>Firebase Realtime Database: Esta base de dados em tempo real é empregada para facilitar a dinâmica de interações na plataforma, desde a administração de cursos até comunicações em tempo real.</p></li>
+<li><p>Tecnologias de Front-end: JS, CSS e HTML são os pilares da construção da interface da PetAcademy. O uso de técnicas de design responsivo e acessível, como as delineadas por Baker (2014), e do framework Bootstrap garante uma padronização e adaptabilidade do design, tornando a plataforma acessível em diferentes dispositivos.</p></li>
+<li><p>Backend com Vercel e NodeJS: A estrutura de back-end foi desenvolvida em NodeJS e é hospedada pela Vercel, proporcionando um sistema eficiente em termos de processamento e resposta às solicitações.</p></li>
+<li><p>GitHub: A plataforma GitHub é empregada para o versionamento do código, garantindo a organização das versões do projeto e facilitando a colaboração entre os desenvolvedores envolvidos (Spinellis, D. (2012)).</p></li>
+<li><p>Trello: No âmbito do gerenciamento de projetos, o Trello é usado para acompanhar o desenvolvimento das tarefas, estabelecer metas e coordenar a equipe em relação a prazos e responsabilidades.</p></li>
+</ul>
+<p>Ao combinar estas tecnologias, a PetAcademy estabelece um fundamento robusto que atende às necessidades atuais do campo educacional, mantendo a capacidade de adaptação a futuras demandas e melhorias.</p>
+</section>
+<section id="metodologia-e-estrutura-de-conteudo">
+<h2>7. Metodologia e Estrutura de Conteúdo<a class="headerlink" href="#metodologia-e-estrutura-de-conteudo" title="Link para este cabeçalho">¶</a></h2>
+<p>Os cursos são meticulosamente planejados, referenciando os planos de ensino da UFU e abrangendo tópicos cruciais em diversas áreas. Cada curso é estruturado em módulos, com aulas em vídeo, textos de apoio, links e materiais variados, proporcionando uma aprendizagem multifacetada e abrangente.</p>
+</section>
+<section id="impacto-e-contribuicoes">
+<h2>8. Impacto e Contribuições<a class="headerlink" href="#impacto-e-contribuicoes" title="Link para este cabeçalho">¶</a></h2>
+<p>A implementação da PetAcademy promete gerar um impacto significativo na comunidade educacional, servindo como um recurso valioso para estudantes, educadores e aprendizes autodidatas. O projeto visa beneficiar não só a comunidade da UFU, mas também proporcionar oportunidades de aprendizagem para indivíduos em todo o mundo.</p>
+</section>
+<section id="conclusao">
+<h2>9. Conclusão<a class="headerlink" href="#conclusao" title="Link para este cabeçalho">¶</a></h2>
+<p>A PetAcademy representa um avanço significativo na promoção da educação e na difusão do conhecimento na Universidade Federal de Uberlândia. Com sua interface amigável, variedade de cursos e sistema robusto de certificação, a plataforma tem o potencial de impactar positivamente a vida de estudantes e indivíduos interessados em expandir seus horizontes educacionais, reafirmando o compromisso da universidade com a inovação educacional e a disseminação do saber. Este projeto é um exemplo eloquente de como a tecnologia pode ser utilizada para superar barreiras educacionais e criar oportunidades de aprendizagem acessíveis, contribuindo para a construção de uma sociedade mais informada e educada.</p>
+</section>
+<section id="agradecimentos">
+<h2>10. Agradecimentos<a class="headerlink" href="#agradecimentos" title="Link para este cabeçalho">¶</a></h2>
+<p>Expressamos nossa profunda gratidão a todos os colaboradores, mentores e desenvolvedores que estão contribuindo para a realização deste projeto, superando obstáculos e criando oportunidades de aprendizagem acessíveis para uma sociedade mais informada e educada, dedicaram seu tempo e esforço.</p>
+</section>
+<section id="referencias">
+<h2>Referências<a class="headerlink" href="#referencias" title="Link para este cabeçalho">¶</a></h2>
+<ul class="simple">
+<li><p>Baker, S. (2014). Making It Work for Everyone: HTML5 and CSS Level 3 for Responsive, Accessible Design on Your Library’s Web Site. Journal of Library &amp; Information Services in Distance Learning, 8, 118 - 136. <a class="reference external" href="https://doi.org/10.1080/1533290X.2014.945825">DOI: 10.1080/1533290X.2014.945825</a>.</p></li>
+<li><p>Spinellis, D. (2012). Git. IEEE Software, 29, 100-101. https://doi.org/10.1109/ms.2012.61.</p></li>
+</ul>
+</section>
+</section>
+
+        </article>
+      </div>
+      <footer>
+        
+        <div class="related-pages">
+          
+          
+        </div>
+        <div class="bottom-of-page">
+          <div class="left-details">
+            <div class="copyright">
+                Copyright &#169; 2024, petsimc
+            </div>
+            Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+            
+            <a href="https://github.com/pradyunsg/furo">Furo</a>
+            
+          </div>
+          <div class="right-details">
+            
+          </div>
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer">
+      
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            On this page
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">PETACADEMY: PLATAFORMA DE CURSOS</a><ul>
+<li><a class="reference internal" href="#resumo">Resumo</a></li>
+<li><a class="reference internal" href="#introducao">1. Introdução</a></li>
+<li><a class="reference internal" href="#objetivos">2. Objetivos</a></li>
+<li><a class="reference internal" href="#estado-atual-e-desenvolvimento-continuado">3. Estado Atual e Desenvolvimento Continuado</a></li>
+<li><a class="reference internal" href="#adaptabilidade-e-acessibilidade-web">4. Adaptabilidade e Acessibilidade Web</a></li>
+<li><a class="reference internal" href="#funcionalidades-do-sistema">5. Funcionalidades do Sistema</a><ul>
+<li><a class="reference internal" href="#login-e-acesso">5.1 Login e Acesso</a></li>
+<li><a class="reference internal" href="#interatividade-e-comunicacao">5.2 Interatividade e Comunicação</a></li>
+<li><a class="reference internal" href="#gestao-de-cursos-e-conteudo">5.3 Gestão de Cursos e Conteúdo</a></li>
+<li><a class="reference internal" href="#avaliacao-e-certificacao">5.4 Avaliação e Certificação</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#tecnologias-empregadas">6. Tecnologias Empregadas</a></li>
+<li><a class="reference internal" href="#metodologia-e-estrutura-de-conteudo">7. Metodologia e Estrutura de Conteúdo</a></li>
+<li><a class="reference internal" href="#impacto-e-contribuicoes">8. Impacto e Contribuições</a></li>
+<li><a class="reference internal" href="#conclusao">9. Conclusão</a></li>
+<li><a class="reference internal" href="#agradecimentos">10. Agradecimentos</a></li>
+<li><a class="reference internal" href="#referencias">Referências</a></li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
+      
+      
+    </aside>
+  </div>
+</div><script src="_static/documentation_options.js?v=8946c2f5"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/scripts/furo.js?v=4e2eecee"></script>
+    <script src="_static/translations.js?v=000972dd"></script>
+    </body>
+</html>
